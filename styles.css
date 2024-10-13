@@ -96,8 +96,8 @@ main{
 
 .cardbox{
     background-color: var(--White);
-    max-width: 384px;
-    max-height: 522px;
+    width: 384px;
+    height: 522px;
     display: flex;
     flex-direction: column;
     align-items: center;
