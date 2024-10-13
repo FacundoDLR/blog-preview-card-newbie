@@ -64,7 +64,7 @@
 
   /* SPACING */
 
-  --spacing200: 16px;
+  --spacing200: 24px;
   --spacing150: 12px;
   --spacing100: 8px;
   --spacing50: 4px;
@@ -79,8 +79,65 @@
   margin: 0;
 }
 
+body{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+main{
+    background-color: var(--Yellow);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardbox{
+    background-color: var(--White);
+    max-width: 327px;
+    max-height: 501px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing200);
+    padding: var(--spacing200);
+    border-radius: 20px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.0477));
+}
+
+.cardbox__image{
+    max-width: 279px;
+    height: 200px;
+}
+
+.cardbox__image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardbox__content--category{
+    width: 73px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: var(--Yellow);
+    text-align: center;
+    justify-content: center;
+}
+
 .attribution {
   font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 93dvh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 
