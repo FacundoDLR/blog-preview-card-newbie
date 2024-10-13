@@ -104,7 +104,9 @@ main{
     gap: var(--spacing200);
     padding: var(--spacing200);
     border-radius: 20px;
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+    border:1px solid var(--Gray950);
+    outline: 1px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
     filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.0477));
 }
 
@@ -143,11 +145,13 @@ main{
     color: var(--Gray950);
 }
 
-.cardbox__content--category p{
+.cardbox__content--category p,
+.cardbox__author--name{
     font-family: "text-preset-3 bold";
 }
 
-.cardbox__content--publishdate{
+.cardbox__content--publishdate,
+.attribution{
     font-family: "text-preset-3";
 }
 
@@ -158,6 +162,19 @@ main{
 .cardbox__content--description{
     font-family: "text-preset-2";
     color: var(--Gray500);
+}
+
+.cardbox__author{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing150);
+    width: 100%;
+    align-items: center;
+}
+
+.cardbox__author--userpic{
+    width: 32px;
+    height: 32px;
 }
 
 .attribution {
