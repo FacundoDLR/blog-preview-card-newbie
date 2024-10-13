@@ -202,3 +202,25 @@ main{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (width <= 480px) {
+
+    .cardbox{
+        width: 327px;
+        height: 501px;
+    }
+
+    .cardbox__content--category p,
+    .cardbox__content--publishdate{
+        font-size: 12px;
+    }
+
+    .cardbox__content--title{
+        font-size: 20px;
+    }
+
+    .cardbox__content--description,
+    .cardbox__author--name{
+        font-size: 14px;
+    }
+}
