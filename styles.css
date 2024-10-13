@@ -107,7 +107,12 @@ main{
     border:1px solid var(--Gray950);
     outline: 1px;
     box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
-    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.0477));
+    transition: box-shadow .2s ease-out;
+}
+
+.cardbox:hover{
+    box-shadow: 12px 12px 0px;
+    cursor: pointer;
 }
 
 .cardbox__image{
@@ -157,6 +162,11 @@ main{
 
 .cardbox__content--title{
     font-family: "text-preset-1";
+    transition: color .2s ease-out;
+}
+
+.cardbox__content--title:hover{
+    color: var(--Yellow);
 }
 
 .cardbox__content--description{
