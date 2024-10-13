@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "text-preset-1", Helvetica, sans-serif;
+  font-family: "text-preset-1";
   src: url("/assets/fonts/static/Figtree-ExtraBold.woff2") format("woff2"),
     url("/assets/fonts/static/Figtree-ExtraBold.woff") format("woff"),
     url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: "text-preset-2", Helvetica, sans-serif;
+  font-family: "text-preset-2";
   src: url("/assets/fonts/static/Figtree-SemiBold.woff2") format("woff2"),
     url("/assets/fonts/static/Figtree-SemiBold.woff") format("woff"),
     url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: "text-preset-3", Helvetica, sans-serif;
+  font-family: "text-preset-3";
   src: url("/assets/fonts/static/Figtree-SemiBold.woff2") format("woff2"),
     url("/assets/fonts/static/Figtree-SemiBold.woff") format("woff"),
     url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-  font-family: "text-preset-3 bold", Helvetica, sans-serif;
+  font-family: "text-preset-3 bold";
   src: url("/assets/fonts/static/Figtree-ExtraBold.woff2") format("woff2"),
     url("/assets/fonts/static/Figtree-ExtraBold.woff") format("woff"),
     url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
@@ -96,8 +96,8 @@ main{
 
 .cardbox{
     background-color: var(--White);
-    max-width: 327px;
-    max-height: 501px;
+    max-width: 384px;
+    max-height: 522px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +109,6 @@ main{
 }
 
 .cardbox__image{
-    max-width: 279px;
     height: 200px;
 }
 
@@ -121,12 +120,44 @@ main{
 }
 
 .cardbox__content--category{
-    width: 73px;
-    height: 26px;
+    width: 82px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     background-color: var(--Yellow);
-    text-align: center;
-    justify-content: center;
+    padding: var(--spacing50) var(--spacing150);
+}
+
+.cardbox__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing150);
+}
+
+.cardbox__content--category p,
+.cardbox__content--publishdate,
+.cardbox__content--title,
+.cardbox__author--name{
+    color: var(--Gray950);
+}
+
+.cardbox__content--category p{
+    font-family: "text-preset-3 bold";
+}
+
+.cardbox__content--publishdate{
+    font-family: "text-preset-3";
+}
+
+.cardbox__content--title{
+    font-family: "text-preset-1";
+}
+
+.cardbox__content--description{
+    font-family: "text-preset-2";
+    color: var(--Gray500);
 }
 
 .attribution {
