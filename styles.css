@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "text-preset-1", Helvetica, sans-serif;
+  src: url("/assets/fonts/static/Figtree-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/static/Figtree-ExtraBold.woff") format("woff"),
+    url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "text-preset-2", Helvetica, sans-serif;
+  src: url("/assets/fonts/static/Figtree-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/static/Figtree-SemiBold.woff") format("woff"),
+    url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "text-preset-3", Helvetica, sans-serif;
+  src: url("/assets/fonts/static/Figtree-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/static/Figtree-SemiBold.woff") format("woff"),
+    url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "text-preset-3 bold", Helvetica, sans-serif;
+  src: url("/assets/fonts/static/Figtree-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/static/Figtree-ExtraBold.woff") format("woff"),
+    url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* STYLE GUIDE */
+
+  /* COLOR */
+
+  --Yellow: hsl(47, 88%, 63%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+
+  /* SPACING */
+
+  --spacing200: 16px;
+  --spacing150: 12px;
+  --spacing100: 8px;
+  --spacing50: 4px;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

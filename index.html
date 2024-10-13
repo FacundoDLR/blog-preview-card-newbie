@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" type="image/png" sizes="16x16 32x32 48x48" href="./assets/images/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon-32x32.png" />
-  
+
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-  Learning
+  <header></header>
 
-  Published 21 Dec 2023
+  <main>
 
-  HTML & CSS foundations
+    <div class="cardbox">
+      <div class="cardbox__image">
+        <img src="./assets/images/illustration-article.svg" alt="">
+      </div>
+      <div class="cardbox__content">
+        <div class="cardbox__content--category">
+          <p>Learning</p>
+        </div>
+        <p class="cardbox__content--publishdate">Published 21 Dec 2023</p>
+        <h2 class="cardbox__content--title">HTML & CSS foundations</h2>
+        <p class="cardbox__content--description">These languages are the backbone of every website, defining structure,
+          content, and presentation.</p>
+      </div>
+      <div class="cardbox__author">
+        <img class="cardbox__author--userpic" src="./assets/images/image-avatar.webp" alt="">
+        <p class="cardbox__author--name">Greg Hooper</p>
+      </div>
+    </div>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+  </main>
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/FacundoDLR" target="_blank">FACUNDO A. DE LOS RIOS</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/FacundoDLR" target="_blank">FACUNDO A. DE LOS RIOS</a>.
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
